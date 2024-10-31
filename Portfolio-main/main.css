@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+/* Logo and text on the left side */
+.logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px; 
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline on the link */
+}
+
+.logo-img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Centering the navigation items */
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav-items li a {
+    color: #686D76;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-items li a:hover {
+   color: black;
+}
+
+
+/* Footer */
+.footer {
+    color: black;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Footer container to wrap copyright and profile */
+.footer-container {
+    display: flex;
+    justify-content: center; /* Center both copyright and profile within the footer */
+    align-items: center;
+    gap: 50px; /* Add space between copyright and profile */
+}
+
+/* Footer text and link styling */
+.footer-copyright p {
+    margin: 0;
+    font-size: 1.2rem; /* Increase font size of copyright text */
+}
+
+.footer-profile {
+    display: flex;
+    gap: 20px; /* Add space between the icons */
+}
+
+.footer-link {
+    color: #686D76;
+    text-decoration: none;
+    font-size: 1.2rem; /* Increase text size */
+}
+
+.footer-link svg {
+    width: 24px;  /* Increase icon size */
+    height: 24px; /* Increase icon size */
+    margin-left: 5px;
+}
+
+.footer-link:hover {
+    color: black; /* Change icon/link color on hover */
+}
+
+/* Ensure footer stays at the bottom even with minimal content */
+footer {
+    margin-top: auto;
+}
